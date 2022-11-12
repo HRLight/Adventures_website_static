@@ -50,13 +50,34 @@
         document.getElementById("output1").innerText=discription;          
     }
 
-    function display2()
+    function about_display_txt()
     {
-        let title=document.getElementById("title1").value;
-        document.getElementById("outtitle1").innerText=title;
-        let title3=document.getElementById("title2").value;
-        document.getElementById("outtitle2").innerText=title3;
+        let add_service_title=document.getElementById("add_service_title").value;
+        document.getElementById("about-txt1").innerText=add_service_title;
+
+        let title3=document.getElementById("add_description_about").value;
+        document.getElementById("about-txt3").innerText=title3;
     }
+
+
+
+    function about_text_display()
+    {
+        let title1=document.getElementById("title1").value;
+        document.getElementById("about-txt1").innerText=title1;
+
+        let title2=document.getElementById("title2").value;
+        document.getElementById("about-txt3").innerText=title2;
+
+        let title3=document.getElementById("title3").value;
+        document.getElementById("about-txt3").innerText=title3;
+    }
+
+
+
+
+
+
 
     function updateTopInfoBGColorClick(){
         var bgColorValue = document.getElementById("top_info_bg_color_selected");
@@ -66,8 +87,10 @@
         //TOP_INFO_DIV.style.backgroundColor=bgColorValue.value;
         console.log(TOP_INFO_DIV.className);
 
-        localStorage.setItem("navbar" , "navbar bg-["+bgColorValue.value+"]");
+        localStorage.setItem("navbar" , "navbar bg-["+bgColorValue.value+"]");    
     }
+
+
 
     function add_services(){
              alert("Are you sure you want to add service");
@@ -86,9 +109,7 @@
              let add_service_description=document.getElementById("add_service_description").value;
              document.getElementById("display_service_description").innerText=add_service_description; 
             }
-                   
-            
-
+                
     }
 
 
