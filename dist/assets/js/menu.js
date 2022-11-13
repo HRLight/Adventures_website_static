@@ -59,8 +59,6 @@
         document.getElementById("about-txt3").innerText=title3;
     }
 
-
-
     function about_text_display()
     {
         let title1=document.getElementById("title1").value;
@@ -72,12 +70,6 @@
         let title3=document.getElementById("title3").value;
         document.getElementById("about-txt3").innerText=title3;
     }
-
-
-
-
-
-
 
     function updateTopInfoBGColorClick(){
         var bgColorValue = document.getElementById("top_info_bg_color_selected");
@@ -109,9 +101,30 @@
              let add_service_description=document.getElementById("add_service_description").value;
              document.getElementById("display_service_description").innerText=add_service_description; 
             }
+
+
                 
     }
 
+    function display_stategy(){
+
+        let strategy=document.getElementById("add_strategy").value;
+        document.getElementById("strategy").innerText=strategy; 
+        
+    }
 
 
-    
+    function display_development(){
+
+        let strategy=document.getElementById("add_development").value;
+        document.getElementById("development").innerText=strategy; 
+        
+    }
+
+
+    function display_launch(){
+
+        let strategy=document.getElementById("add_launch").value;
+        document.getElementById("launch").innerText=strategy; 
+        
+    }
