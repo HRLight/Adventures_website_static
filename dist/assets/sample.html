@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+<body>
+<!--Start of Editable website-->
+<section class="mt-10 md:py-24 py-16  dark:bg-gray-800" id="edit">
+    <div class="relative  bg-white mt-10">
+      <div class="w-3/4  mx-auto mt-10 bg-gray-50 rounded drop-shadow-xl">
+        <div class="text-center ">
+             <h6 class="text-orange-600 text-base font-medium text-2xl uppercase mb-2">Custom Website</h6>
+                <h3 class="mb-4 md:text-2xl text-xl font-medium dark:text-white">Edit Here!</h3>
+                    <p class="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.</p>
+                        </div>
+                            <div class="bg-gray-50 text-center">
+                                <div class="w-full mt-10 "> <!-- Navigation Bar-->
+                                    <h4 class="text-1xl font-bold">Select A Menu Items</h4></div>
+                                    <div class="md:flex">
+                                        <div class="w-64 mx-auto">
+                                            <input type="checkbox" onclick="home1();" class="" id="home_show">
+                                            <label for="" class="font-bold">Home</label>
+                                        </div>
+                                        <div class="w-64 mx-auto">
+                                            <input type="checkbox" onclick="about1()" class="" id="about_show">
+                                            <label for="" class="font-bold">About</label>
+                                        </div>
+                                        <div class="w-64 mx-auto">
+                                            <input type="checkbox"   onclick="service()" class="" id="service_show">
+                                            <label for="" class="font-bold">Service</label>
+                                        </div>
+                                        <div class="w-64 mx-auto">
+                                            <input type="checkbox" onclick="portfolio()"class="">
+                                            <label for="" class="font-bold">Portfolio</label>
+                                        </div>
+                                        <div class="w-64 mx-auto">
+                                            <input type="checkbox" onclick="review()" class="">
+                                            <label for="" class="font-bold">Review</label>
+                                        </div>
+
+                                        <div class="w-64 mx-auto">
+                                            <input type="checkbox" onclick="pricing()" class="">
+                                            <label for="" class="font-bold">Pricing</label>
+                                        </div>
+                                        <div class="w-64 mx-auto">
+                                            <input type="checkbox" onclick="team()" class="">
+                                            <label for="" class="font-bold">Team</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                        <div class="w-full text-center mt-6 ">
+                                            <h4 class="text-1xl font-bold" >Set Navigation Color</h4>
+                                                <div class="md:flex w-full mt-6">
+                                                    <div class="mx-20">
+                                                        <label for="top_bg_color_selected">Change Navigation Backgroud</label>
+                                                        <input type="color" id="top_info_bg_color_selected" name="top_info_bg_color_selected" value="#ff0550" onChange="updateTopInfoBGColorClick()" onclick="updateTopInfoBGColorClick()">
+                                                    </div>
+                                                    <div>
+                                                        <label for="top_bg_color_selected">Change Text Color</label>
+                                                        <input type="color" id="top_info_bg_color_selected" name="top_info_bg_color_selected" value="#ff0550" onChange="updateTopInfoBGColorClick()" onclick="updateTopInfoBGColorClick()">
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    <div></div>
+                                    <div class="w-full  mt-10 mb-10" id="home_menu"><!--Home Page-->
+                                        <div class="w-full text-center py-5">
+                                            <h5 class="text-orange-600 text-base font-medium  mb-2">Change Home Page</h5>
+                                            <h4>Customize your about settings</h4>
+                                        </div>
+
+                                        
+                                    <div class="md:flex py-5">
+                                        <div class="md:w-full mx-10"> 
+                                            <label for="" class="mb-4 md:text-1xl text-md font-medium dark:text-white">Home Title</label>
+                                            <input  name="name" id="title1" onkeyup="display2()" type="text" title="Upload Logo" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 w-full h-10 "  placeholder="Title :">
+                                        </div>
+                                        <div class="md:w-full mx-10">
+                                            <label for="" class="mb-4 md:text-1xl text-md font-medium dark:text-white">Home Description</label>
+                                            <textarea name="Description" id="tbuser" type="text" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 textarea h-10 w-full " onkeyup="display()" placeholder="Description"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="md:flex ">
+                                            <div class="md:w-full mx-10 py-5">
+                                                <label for="" class="mb-4 md:text-1xl text-md font-medium dark:text-white">Highlight Title</label>
+                                                <input name="name" id="title2" onkeyup="display2()" type="text" title="Upload Logo" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 w-full"  placeholder="Title Highlight :">
+                                            </div>        
+                                        <div class="md:w-full mx-10 py-6">
+                                            <label for="" class="mb-4 md:text-1xl text-md font-medium dark:text-white">Upload Background Image</label>
+                                            <input name="name" id="name" type="file" title="Upload Logo" class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100" Title="Upload bacground">
+                                        </div>
+                                    </div>
+                                <div>
+                            </div>
+                        </div>
+                            <div class="mt-10  w-full" id="about_edit_menu">
+                                <div class="text-center">
+                                <h6 class="text-orange-600 text-base font-medium  mb-2">About</h6>
+                                    <h4>Customize your about settings</h4>
+                                </div>
+                                    <div class="md:flex w-full  py-5">
+                                        <div class="md:w-full mx-10">
+                                            <label for="">Company Name:</label>
+                                            <input type="text" id="add_service_title" onkeyup="about_display_txt()" class="mt-1 px-3 py-2  bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 w-full h-10 " placeholder="About Title:" >
+                                        </div>
+                                        <div class="md:w-full mx-10">
+                                            <label for=""> Company Story </label>
+                                            <textarea name="Description" id="add_description_about" onkeyup="about_display_txt()" type="text" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 textarea h-10 w-full "  placeholder="Description"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="w-full py-5 mx-10">
+                                        <div class="md:w-full px-10">
+                                            <label for="" class="float-left">Upload Video</label>
+                                            <input name="name" id="name" type="file" title="Upload Logo" class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100" Title="Upload bacground"> 
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="mt-10 w-full" id="service_edit">
+                                        <div class="text-center">
+                                            <h6 class="text-orange-600 text-base font-medium  mb-2">Service</h6>
+                                            <h4>Customize your Service</h4>
+
+                                        </div>
+                                        
+                                            <div class="md:flex w-full py-5">
+                                                <div class="md:w-full mx-10">
+                                                    <label for="">Service Name:</label>
+                                                    <input type="text" id="add_service_title" onkeyup="about_display_txt()" class=" mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 w-full h-10 " placeholder="Grow Your Business" >
+                                                </div>
+                                                <div class="md:w-full mx-10">
+                                                    <label for=""> Service Description </label>
+                                                    <textarea name="Description" id="add_service_description"   type="text" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 textarea h-10 w-full " onkeyup="display()" placeholder="Perfect Solution For Your"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="md:flex w-full py-5">
+
+                                                <div class="md:w-full  mx-10">
+                                                    <label for="">Strategy</label>
+                                                    <textarea name="Description" onkeyup="display_stategy()" id="add_strategy"   type="text" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 textarea h-10 w-full "  placeholder="The generated injected humour...."></textarea>
+                                                </div>
+                                                <div class="md:w-full mx-10">
+                                                    <label for=""> Development</label>
+                                                    <textarea name="Description" onkeyup="display_development()" id="add_development"   type="text" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 textarea h-10 w-full"  placeholder="The generated injected humour, "></textarea>
+                                                </div>                                               
+                                            </div>
+
+                                            <div class="md:flex w-full py-5">
+                                                <div class="md:w-full mx-10">
+                                                    <label for=""> Launch </label>
+                                                    <textarea name="Description" onkeyup="display_launch()"  id="add_launch"   type="text" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 textarea h-10 w-full" placeholder="The generated injected humour, "></textarea>
+                                                </div>
+
+
+                                                <div class="md:w-full mx-10">
+                                                    <label for="" class="float-left">Upload Logo</label>
+                                                    <input name="name" id="name" type="file" title="Upload Logo" class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100" Title="Upload bacground"> 
+                                                </div>   
+                                                
+                                             </div>
+                                                <div class="md:w-full  h-28 px-10">
+                                                        <button class=" bg-indigo-700 w-40 md:w-96 h-10 rounded-full font-medium text-white" onclick="add_services()"> <i class="uil uil-plus "></i> Add Service</button>
+                                                </div>
+                                            <div>
+                                        </div>
+                                    </div><!--End of service -->
+                                    
+                                    <div class="w-full  "><!-- Start of forfolio module-->
+                                        <div class="w-full mx-auto text-center">
+                                        <h6 class="text-orange-600 text-base font-medium  mb-2">Portfolio </h6>
+                                            <h4>Customize your Portfolio</h4>
+                                        </div>
+                                                <div class="md:flex w-full">
+                                                    <div class="md:w-full md:px-10">
+                                                        <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Project Name </label>
+                                                         <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Sample Title" required>
+                                                    </div>
+
+                                                    
+                                                    <div class="md:w-full md:px-10">
+                                                        <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Description</label>
+                                                         <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Sample Description" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="md:flex w-full py-5">
+                                                                                        
+
+                                                <div class="md:w-full px-10">
+                                                  
+                                                        <button class="bg-indigo-700 w-40 md:w-96 h-10 rounded-full font-medium text-white" onclick="add()"> <i class="uil uil-plus "></i> Add Portfolio</button>
+                                                  
+                                                </div>
+
+                                                <div class="md:w-full mx-10">
+                                                    <label for="" class="mb-4 md:text-1xl text-md font-medium dark:text-white">Upload Image</label>
+                                                    <input name="name" id="name" type="file" title="Upload Logo" class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100" Title="Upload bacground">
+                                                </div>
+                                          
+                                            </div>
+                                    </div><!--End of forfolio -->
+                            <div>     
+                        </div>
+                 </div>
+             </div>
+            </div>
+        </div>
+    </section>
+<!--end of modal Section -->
+</body>
+</html>

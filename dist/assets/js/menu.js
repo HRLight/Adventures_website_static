@@ -44,87 +44,107 @@
     }
 
     // Auto display In Text of menu items 
-    function display()
-    {                    
-        let discription=document.getElementById("tbuser").value;
-        document.getElementById("output1").innerText=discription;          
-    }
+        function home_display()
+        {                    
+            let discription=document.getElementById("title1").value;
+            document.getElementById("output1").innerText=discription;    
+            
+            let home_discription=document.getElementById("add_home_description").value;
+            document.getElementById("home_des").innerText=home_discription; 
+        }
 
-    function about_display_txt()
-    {
-        let add_service_title=document.getElementById("add_service_title").value;
-        document.getElementById("about-txt1").innerText=add_service_title;
-
-        let title3=document.getElementById("add_description_about").value;
-        document.getElementById("about-txt3").innerText=title3;
-    }
-
-    function about_text_display()
-    {
-        let title1=document.getElementById("title1").value;
-        document.getElementById("about-txt1").innerText=title1;
-
-        let title2=document.getElementById("title2").value;
-        document.getElementById("about-txt3").innerText=title2;
-
-        let title3=document.getElementById("title3").value;
-        document.getElementById("about-txt3").innerText=title3;
-    }
-
-    function updateTopInfoBGColorClick(){
-        var bgColorValue = document.getElementById("top_info_bg_color_selected");
-        var TOP_INFO_DIV = document.getElementById("navbar");
-        console.log(bgColorValue.value);
-        TOP_INFO_DIV.className="navbar bg-["+bgColorValue.value+"]";
-        //TOP_INFO_DIV.style.backgroundColor=bgColorValue.value;
-        console.log(TOP_INFO_DIV.className);
-
-        localStorage.setItem("navbar" , "navbar bg-["+bgColorValue.value+"]");    
-    }
-
-
-
-    function add_services(){
-             alert("Are you sure you want to add service");
-            var service = document.getElementById("add_service"),
-            form = document.getElementsByTagName("form")[0],
-            ContestantNum = 1,
-            i;
-            for(i=0; i<ContestantNum; i++){
-                var clone = service.cloneNode(true);
-                form.appendChild(clone);
-                service.classList.remove("hidden");
-
+        function about_display_txt()
+        {
             let add_service_title=document.getElementById("add_service_title").value;
-             document.getElementById("display_service_title").innerText=add_service_title; 
+            document.getElementById("about-txt1").innerText=add_service_title;
 
-             let add_service_description=document.getElementById("add_service_description").value;
-             document.getElementById("display_service_description").innerText=add_service_description; 
-            }
+            let title3=document.getElementById("add_description_about").value;
+            document.getElementById("about-txt3").innerText=title3;
+        }
+
+        function about_text_display()
+        {
+            let title1=document.getElementById("title1").value;
+            document.getElementById("about-txt1").innerText=title1;
+
+            let title2=document.getElementById("title2").value;
+            document.getElementById("about-txt3").innerText=title2;
+
+            let title3=document.getElementById("title3").value;
+            document.getElementById("about-txt3").innerText=title3;
+        }
+
+        function updateTopInfoBGColorClick(){
+            var bgColorValue = document.getElementById("top_info_bg_color_selected");
+            var TOP_INFO_DIV = document.getElementById("navbar");
+            console.log(bgColorValue.value);
+            TOP_INFO_DIV.className="navbar bg-["+bgColorValue.value+"]";
+            //TOP_INFO_DIV.style.backgroundColor=bgColorValue.value;
+            console.log(TOP_INFO_DIV.className);
+
+            localStorage.setItem("navbar" , "navbar bg-["+bgColorValue.value+"]");    
+        }
 
 
-                
-    }
 
-    function display_stategy(){
+            function add_services(){
+                    alert("Are you sure you want to add service");
+                    var service = document.getElementById("add_service"),
+                    form = document.getElementsByTagName("form")[0],
+                    ContestantNum = 1,
+                    i;
+                    for(i=0; i<ContestantNum; i++){
+                        var clone = service.cloneNode(true);
+                        form.appendChild(clone);
+                        service.classList.remove("hidden");
 
-        let strategy=document.getElementById("add_strategy").value;
-        document.getElementById("strategy").innerText=strategy; 
-        
-    }
+                    let add_service_title=document.getElementById("add_service_title").value;
+                    document.getElementById("display_service_title").innerText=add_service_title; 
+
+                    let add_service_description=document.getElementById("add_service_description").value;
+                    document.getElementById("display_service_description").innerText=add_service_description; 
+                    }
+                        
+                    }                                   
+
+                    function display_stategy(){
+
+                        let strategy=document.getElementById("add_strategy").value;
+                        document.getElementById("strategy").innerText=strategy; 
+                        
+                    }
 
 
-    function display_development(){
+                    function display_development(){
 
-        let strategy=document.getElementById("add_development").value;
-        document.getElementById("development").innerText=strategy; 
-        
-    }
+                        let strategy=document.getElementById("add_development").value;
+                        document.getElementById("development").innerText=strategy; 
+                        
+                    }                       
 
+                    function display_launch(){
 
-    function display_launch(){
+                        let strategy=document.getElementById("add_launch").value;
+                        document.getElementById("launch").innerText=strategy; 
+                        
+                    }
 
-        let strategy=document.getElementById("add_launch").value;
-        document.getElementById("launch").innerText=strategy; 
-        
-    }
+                    function add_portfolio(){
+                        alert("Are you sure you want to add this service");
+                        var portfolio = document.getElementById("add_portfolio"),
+                        formd = document.getElementsById("form_oo")[0],
+                        ContestantNum = 1,
+                        i;
+
+                        for(i=0; i<ContestantNum; i++){
+                            var clone = portfolio.cloneNode(true);
+                            formd.appendChild(clone);
+                            portfolio.classList.remove("hidden");
+    
+                            // let add_service_title=document.getElementById("add_service_title").value;
+                            // document.getElementById("display_service_title").innerText=add_service_title; 
+    
+                            // let add_service_description=document.getElementById("add_service_description").value;
+                            // document.getElementById("display_service_description").innerText=add_service_description; 
+                        }
+                    }
