@@ -17,7 +17,7 @@
             home_show == true ? home_des.classList.remove("hidden") : home_des.classList.add("hidden");
 
             console.log(home_show, "home_show");  
-    }
+     }
 
     function about1(){
             var about_navbar = document.getElementById("about_navbar");
@@ -31,17 +31,17 @@
     }
 
 
-    function service(){
+        function service(){
 
-        var service_navbar = document.getElementById("service_navbar");
-        var service = document.getElementById("features");
-        var service_edit = document.getElementById("service_edit");
-        var service_show=document.getElementById("service_show").checked;
+            var service_navbar = document.getElementById("service_navbar");
+            var service = document.getElementById("features");
+            var service_edit = document.getElementById("service_edit");
+            var service_show=document.getElementById("service_show").checked;
 
-        service_show == true ?  service_navbar.classList.remove("hidden") : service_navbar.classList.add("hidden");
-        service_show == true ?  service.classList.remove("hidden") :    service.classList.add("hidden");
-        service_show == true ?  service_edit.classList.remove("hidden") :   service_edit.classList.add("hidden");
-    }
+            service_show == true ?  service_navbar.classList.remove("hidden") : service_navbar.classList.add("hidden");
+            service_show == true ?  service.classList.remove("hidden") :    service.classList.add("hidden");
+            service_show == true ?  service_edit.classList.remove("hidden") :   service_edit.classList.add("hidden");
+         }
 
     // Auto display In Text of menu items 
         function home_display()
