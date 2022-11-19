@@ -1,10 +1,7 @@
 //show and Hide menu Items
 
         function home1(){
-
-
                 console.log("home1");
-
                 var home_navbar = document.getElementById("home_navbar");
                 var home = document.getElementById("home");
                 var home_menu = document.getElementById("home_menu");
@@ -29,7 +26,6 @@
                 about_show == true ?  about_edit.classList.remove("hidden") :   about_edit.classList.add("hidden");
                 console.log(about_show, "about_show");
         }
-
 
         function service(){
 
@@ -61,11 +57,25 @@
         // Auto display In Text of menu items 
         function home_display()
         {                    
-            let discription=document.getElementById("title1").value;
-            document.getElementById("output1").innerText=discription;    
+            //const output1=document.getElementById("output1");
+            let home_title=document.getElementById("title1").value;
+            if(home_title==null || home_title==""){
+                home_title="Sample Title";
+            }
+            
+            // document.getElementById("output1").innerText=home_title;
+            $('#output1').text(new_business_name);
+            localStorage.setItem("Home Title", home_title);         
+
             
             let home_discription=document.getElementById("add_home_description").value;
+
+            if(home_discription==null || home_discription==""){
+                home_discription="Sample Description"
+
+            }
             document.getElementById("home_des").innerText=home_discription; 
+            localStorage.setItem("Home Description", home_discription);
         }
 
         function about_display_txt()
