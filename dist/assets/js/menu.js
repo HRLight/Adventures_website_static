@@ -63,7 +63,7 @@
             }
             
             document.getElementById("output1").innerText=home_title;
-            $('#output1').text(new_business_name);
+            //$('#output1').text(new_business_name);
             localStorage.setItem("Home Title", home_title);         
 
             
@@ -108,8 +108,6 @@
 
             localStorage.setItem("navbar" , "navbar bg-["+bgColorValue.value+"]");    
         }
-
-
 
             function add_services(){
                     alert("Are you sure you want to add service");
