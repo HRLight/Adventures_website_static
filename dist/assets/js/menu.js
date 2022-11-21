@@ -12,7 +12,6 @@
                 home_show == true ? home.classList.remove("hidden") : home.classList.add("hidden");
                 home_show == true ? home_menu.classList.remove("hidden") : home_menu.classList.add("hidden");
                 home_show == true ? home_des.classList.remove("hidden") : home_des.classList.add("hidden");
-
                 console.log(home_show, "home_show");  
         }  
 
@@ -63,7 +62,7 @@
                 home_title="Sample Title";
             }
             
-            // document.getElementById("output1").innerText=home_title;
+            document.getElementById("output1").innerText=home_title;
             $('#output1').text(new_business_name);
             localStorage.setItem("Home Title", home_title);         
 

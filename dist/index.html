@@ -106,16 +106,7 @@
                             <a class="nav-link" href="#testi">Review</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Pricing</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#team">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blog">Blog</a>
-                        </li>
+                     
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact us</a>
                         </li>           
@@ -153,7 +144,7 @@
 
 
             <!-- Start -->
-           <section class="relative md:py-24 py-16 bg-zinc-50 dark:bg-gray-800" id="about">
+        <section class="relative md:py-24 py-16 bg-zinc-50 dark:bg-gray-800" id="about">
             <div class="container mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 gap-10 items-center">
                     <div class="lg:col-span-5">
@@ -173,7 +164,6 @@
                             <h3 class="mb-4 md:text-2xl text-xl font-medium dark:text-white" id="about-txt2">Our Company Story</h3>
 
                             <p class="text-slate-400 dark:text-slate-300 max-w-2xl mx-auto" id="about-txt3">Start working with Upwind that can provide everything you need to generate awareness, drive traffic, connect. Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy texts have been in use by typesetters since the 16th century.</p>
-    
                             <div class="relative mt-10">
                                 <a href="#portfolio" class="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md">View Portfolio</a>
                             </div>
@@ -329,9 +319,8 @@
         </section><!--end section-->
         <!-- End -->
 
-
          <!-- start -->
-         <section class="relative md:py-24 py-16 bg-zinc-50 dark:bg-gray-800 hidden" id="testi">
+         <section class="relative md:py-24 py-16 bg-zinc-50 dark:bg-gray-800" id="testi">
             <div class="container">
                 <div class="grid grid-cols-1 pb-8 text-center">
                     <h6 class="text-orange-600 text-base font-medium uppercase mb-2">Testimonial</h6>
@@ -400,139 +389,93 @@
         </section><!--end section-->
         <!-- End -->
 
+        <!-- Start -->
+        <section class="relative md:py-24 py-16 bg-zinc-50 dark:bg-gray-800" id="contact">
+            <div class="container">
+                <div class="grid grid-cols-1 pb-8 text-center">
+                    <h6 class="text-orange-600 text-base font-medium uppercase mb-2">Contact us</h6>
+                    <h3 class="mb-4 md:text-2xl text-xl font-medium dark:text-white">Get In Touch !</h3>
 
+                    <p class="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.</p>
+                </div><!--end grid-->
 
- <!-- start -->
- <section class="relative md:py-24 py-16" id="pricing">
-    <div class="container">
-        <div class="grid grid-cols-1 pb-8 text-center">
-            <h6 class="text-orange-600 text-base font-medium uppercase mb-2">Pricing</h6>
-            <h3 class="mb-4 md:text-2xl text-xl font-medium dark:text-white">Comfortable Rates</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 mt-8 items-center gap-6">
+                    <div class="lg:col-span-8">
+                        <div class="p-6 rounded-md shadow bg-white dark:bg-black">
+                            <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
+                                <p class="mb-0" id="error-msg"></p>
+                                <div id="simple-msg"></div>
+                                <div class="grid lg:grid-cols-12 lg:gap-6">
+                                    <div class="lg:col-span-6 mb-5">
+                                        <input name="name" id="name" type="text" class="form-input" placeholder="Name :">
+                                    </div>
+    
+                                    <div class="lg:col-span-6 mb-5">
+                                        <input name="email" id="email" type="email" class="form-input" placeholder="Email :">
+                                    </div><!--end col-->
+                                </div>
 
-            <p class="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.</p>
-        </div><!--end grid-->
-        
-        <div class="flex flex-wrap">
-            <div class="w-full md:w-1/2 lg:w-1/3 px-0 md:px-3 mt-8">
-                <div
-                    class="flex flex-col pt-8 pb-8 bg-zinc-50 hover:bg-white dark:bg-gray-800 dark:hover:bg-black rounded-md shadow shadow-slate-200 dark:shadow-slate-700 transition duration-500">
-                    <div class="px-8 pb-8">
-                        <h3 class="mb-6 text-lg md:text-xl font-medium dark:text-white">Basic</h3>
-                        <div class="mb-6 dark:text-white/70">
-                            <span class="relative -top-5 text-2xl">$</span>
-                            <span class="text-5xl font-semibold dark:text-white">10</span>
-                            <span class="inline-block ml-1">/ month</span>
+                                <div class="grid grid-cols-1">
+                                    <div class="mb-5">
+                                        <input name="subject" id="subject" class="form-input" placeholder="Subject :">
+                                    </div>
+
+                                    <div class="mb-5">
+                                        <textarea name="comments" id="comments" class="form-input textarea h-28" placeholder="Message :"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" id="submit" name="send" class="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md h-11 justify-center flex items-center">Send Message</button>
+                            </form>
                         </div>
-                        <p class="mb-6 text-slate-430 dark:text-slate-300">Basic features for up to 10 users.</p>
-                        <a href="" class="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md w-full">Started Now</a>
                     </div>
-                    <div class="border-b border-slate-200 dark:border-slate-700"></div>
-                    <ul class="self-start px-8 pt-8">
-                        <li class="flex items-center my-1 text-slate-400 dark:text-slate-300">
-                            <i class="uil uil-check-circle text-lg text-green-600 mr-1"></i>
-                            <span>Complete documentation</span>
-                        </li>
-                        <li class="flex items-center my-1 text-slate-400 dark:text-slate-300">
-                            <i class="uil uil-check-circle text-lg text-green-600 mr-1"></i>
-                            <span>Working materials in Figma</span>
-                        </li>
-                        <li class="flex items-center my-1 text-slate-400 dark:text-slate-300">
-                            <i class="uil uil-check-circle text-lg text-green-600 mr-1"></i>
-                            <span>100GB cloud storage</span>
-                        </li>
-                        <li class="flex items-center my-1 text-slate-400 dark:text-slate-300">
-                            <i class="uil uil-check-circle text-lg text-green-600 mr-1"></i>
-                            <span>500 team members</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="w-full md:w-1/2 lg:w-1/3 px-0 md:px-3 mt-8">
-                <div
-                    class="flex flex-col pt-8 pb-8 bg-zinc-50 hover:bg-white dark:bg-gray-800 dark:hover:bg-black rounded-md shadow shadow-slate-200 dark:shadow-slate-700 transition duration-500">
-                    <div class="px-8 pb-8">
-                        <div class="flex flex-wrap items-center justify-between">
-                            <h3 class="mb-6 text-lg md:text-xl font-medium dark:text-white">Business</h3>
+                    <div class="lg:col-span-4">
+                        <div class="lg:ml-8">
+                            <div class="flex">
+                                <div class="icons text-center mx-auto">
+                                    <i class="uil uil-phone block rounded text-2xl dark:text-white mb-0"></i>
+                                </div>
+    
+                                <div class="flex-1 ml-6">
+                                    <h5 class="text-lg dark:text-white mb-2 font-medium">Phone</h5>
+                                    <a href="tel:+152534-468-854" class="text-slate-400">+152 534-468-854</a>
+                                </div>
+                            </div>
+    
+                            <div class="flex mt-4">
+                                <div class="icons text-center mx-auto">
+                                    <i class="uil uil-envelope block rounded text-2xl dark:text-white mb-0"></i>
+                                </div>
+    
+                                <div class="flex-1 ml-6">
+                                    <h5 class="text-lg dark:text-white mb-2 font-medium">Email</h5>
+                                    <a href="mailto:contact@example.com" class="text-slate-400">contact@example.com</a>
+                                </div>
+                            </div>
+    
+                            <div class="flex mt-4">
+                                <div class="icons text-center mx-auto">
+                                    <i class="uil uil-map-marker block rounded text-2xl dark:text-white mb-0"></i>
+                                </div>
+    
+                                <div class="flex-1 ml-6">
+                                    <h5 class="text-lg dark:text-white mb-2 font-medium">Location</h5>
+                                    <p class="text-slate-400 mb-2">C/54 Northwest Freeway, Suite 558, Houston, USA 485</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mb-6 dark:text-white/70">
-                            <span class="relative -top-5 text-2xl">$</span>
-                            <span class="text-5xl font-semibold dark:text-white">99</span>
-                            <span class="inline-block ml-1">/ month</span>
-                        </div>
-                        <p class="mb-6 text-slate-430 dark:text-slate-300">Basic features for up to 30 users.</p>
-                        <a href="" class="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md w-full">Buy Now</a>
                     </div>
-                    <div class="border-b border-slate-200 dark:border-slate-700"></div>
-                    <ul class="self-start px-8 pt-8">
-                        <li class="flex items-center my-1 text-slate-400 dark:text-slate-300">
-                            <i class="uil uil-check-circle text-lg text-green-600 mr-1"></i>
-                            <span>Complete documentation</span>
-                        </li>
-                        <li class="flex items-center my-1 text-slate-400 dark:text-slate-300">
-                            <i class="uil uil-check-circle text-lg text-green-600 mr-1"></i>
-                            <span>Working materials in Figma</span>
-                        </li>
-                        <li class="flex items-center my-1 text-slate-400 dark:text-slate-300">
-                            <i class="uil uil-check-circle text-lg text-green-600 mr-1"></i>
-                            <span>100GB cloud storage</span>
-                        </li>
-                        <li class="flex items-center my-1 text-slate-400 dark:text-slate-300">
-                            <i class="uil uil-check-circle text-lg text-green-600 mr-1"></i>
-                            <span>500 team members</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="w-full md:w-1/2 lg:w-1/3 px-0 md:px-3 mt-8">
-                <div
-                    class="flex flex-col pt-8 pb-8 bg-zinc-50 hover:bg-white dark:bg-gray-800 dark:hover:bg-black rounded-md shadow shadow-slate-200 dark:shadow-slate-700 transition duration-500">
-                    <div class="px-8 pb-8">
-                        <h3 class="mb-6 text-lg md:text-xl font-medium dark:text-white">Professional</h3>
-                        <div class="mb-6 dark:text-white/70">
-                            <span class="relative -top-5 text-2xl">$</span>
-                            <span class="text-5xl font-semibold dark:text-white">299</span>
-                            <span class="inline-block ml-1">/ month</span>
-                        </div>
-                        <p class="mb-6 text-slate-430 dark:text-slate-300">Basic features for up to 100 users.</p>
-                        <a href="" class="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md w-full">Signup Now</a>
-                    </div>
-                    <div class="border-b border-slate-200 dark:border-slate-700"></div>
-                    <ul class="self-start px-8 pt-8">
-                        <li class="flex items-center my-1 text-slate-400 dark:text-slate-300">
-                            <i class="uil uil-check-circle text-lg text-green-600 mr-1"></i>
-                            <span>Complete documentation</span>
-                        </li>
-                        <li class="flex items-center my-1 text-slate-400 dark:text-slate-300">
-                            <i class="uil uil-check-circle text-lg text-green-600 mr-1"></i>
-                            <span>Working materials in Figma</span>
-                        </li>
-                        <li class="flex items-center my-1 text-slate-400 dark:text-slate-300">
-                            <i class="uil uil-check-circle text-lg text-green-600 mr-1"></i>
-                            <span>100GB cloud storage</span>
-                        </li>
-                        <li class="flex items-center my-1 text-slate-400 dark:text-slate-300">
-                            <i class="uil uil-check-circle text-lg text-green-600 mr-1"></i>
-                            <span>500 team members</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="flex justify-center text-slate-400 dark:text-slate-300 mt-2"><span class="text-orange-600">*</span>No credit card required</div>
-    </div><!--end container-->
-</section><!--end section-->
-<!-- End -->
-
-
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
 
 <!--Start of Editable website-->
 <section class="mt-10 md:py-24 py-16  dark:bg-gray-800" id="edit">
     <div class="relative  bg-white mt-10">
       <div class="w-3/4  mx-auto mt-10 bg-gray-50 rounded drop-shadow-xl">
         <div class="text-center ">
-             <h6 class="text-orange-600 text-base font-medium text-2xl uppercase mb-2">Custom Website</h6>
+             <h6 class="text-orange-600  font-medium text-2xl uppercase mb-2">Custom Website</h6>
                 <h3 class="mb-4 md:text-2xl text-xl font-medium dark:text-white">Edit Here!</h3>
                     <p class="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.</p>
                         </div>
@@ -562,12 +505,8 @@
                                         </div>
 
                                         <div class="w-64 mx-auto">
-                                            <input type="checkbox" onclick="pricing()" class="">
-                                            <label for="" class="font-bold">Pricing</label>
-                                        </div>
-                                        <div class="w-64 mx-auto">
-                                            <input type="checkbox" onclick="team()" class="">
-                                            <label for="" class="font-bold">Team</label>
+                                            <input type="checkbox" onclick="contact()" class="">
+                                            <label for="" class="font-bold">Contact Us</label>
                                         </div>
                                     </div>
                                     </div>
@@ -655,7 +594,6 @@
                                             </div>
 
                                             <div class="md:flex w-full py-5">
-
                                                 <div class="md:w-full  mx-10 p-4">
                                                     <label for="">Strategy</label>
                                                     <textarea name="Description" onkeyup="display_stategy()" id="add_strategy"   type="text" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 textarea h-10 w-full "  placeholder="The generated injected humour...."></textarea>
@@ -696,7 +634,6 @@
                                                         <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Project Name </label>
                                                          <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Sample Title" required>
                                                     </div>
-
                                                     
                                                     <div class="md:w-full mx-10 p-4">
                                                         <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Description</label>
@@ -718,59 +655,72 @@
                                             </div>
                                     </div><!--End of forfolio -->
 
-                                    <div class="w-full ">
+                                    <div class="w-full "><!--Start of Review -->
                                         <div class="w-full mx-auto text-center">
-                                            <h6 class="text-orange-600 text-base font-medium  mb-2">Pricing</h6>
+                                            <h6 class="text-orange-600 text-base font-medium  mb-2">Review </h6>
                                                 <h4>Comfortable Rates</h4>
                                             </div>
                                             <div class="md:flex w-full">
                                                 <div class="md:w-full mx-10 p-4">
-                                                    <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Features Name</label>
-                                                     <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Basic" required>
+                                                    <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Full Name</label>
+                                                     <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Carl Oliver" required>
                                                 </div>
 
                                             
                                                 <div class="md:w-full mx-10 p-4">
-                                                    <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Price</label>
-                                                     <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="P 99" required>
+                                                    <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Position</label>
+                                                     <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Staff Engineer, Algolia" required>
                                                 </div>    
-                                            </div>
+                                        </div>
 
                                             <div class="md:flex w-full">
                                                 <div class="md:w-full mx-10 p-4">
-                                                    <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">features 1 </label>
-                                                     <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Sample Title" required>
-                                                </div>
+                                                    <label for="" class="mb-4 md:text-1xl text-md font-medium dark:text-white">Upload Image</label>
+                                                    <input name="name" id="name" type="file" title="Upload Logo" class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100" Title="Upload bacground">
+                
+                                                    </div>
                                                 
                                                 <div class="md:w-full mx-10 p-4">
-                                                    <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">features 2</label>
-                                                     <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Sample Description" required>
-                                                </div>
+                                                    <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Feedback</label>
+                                                     <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder=" The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century." required>
+                                                    </div>
                                             </div>
 
+                                            <div class="md:w-full px-10">   
+                                                <button class="bg-indigo-700 w-40 md:w-96 h-10 rounded-full font-medium text-white" onclick="add_review()"> <i class="uil uil-plus "></i> Add Review</button>
+                                            </div>
+                                    </div><!--End  of Review -->
+                                    <div class="w-full "><!--Start of Contact -->
+                                        <div class="w-full mx-auto text-center">
+                                            <h6 class="text-orange-600 text-base font-medium  mb-2">CONTACT US</h6>
+                                                <h4>Get In Touch !</h4>
+                                            </div>
                                             <div class="md:flex w-full">
                                                 <div class="md:w-full mx-10 p-4">
-                                                    <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">features 3 </label>
-                                                     <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Sample Title" required>
+                                                    <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Phone</label>
+                                                    <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="+152 534-468-854" required>
                                                 </div>
-                                                
-                                                <div class="md:w-full mx-10 p-4">
-                                                    <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">features 5</label>
-                                                     <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Sample Description" required>
-                                                </div>
-                                            </div>
 
+                                            
+                                                <div class="md:w-full mx-10 p-4">
+                                                    <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email</label>
+                                                    <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="contact@example.com" required>
+                                                </div>    
+                                        </div>
                                             <div class="md:flex w-full">
                                                 <div class="md:w-full mx-10 p-4">
-                                                    <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">features 6 </label>
-                                                     <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Sample Title" required>
-                                                </div>
-                                                
-                                                <div class="md:w-full mx-10 p-4">
-                                                    <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">features 7</label>
-                                                     <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Sample Description" required>
+                                                    <label for="project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Location</label>
+                                                    <input type="text" id="project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="C/54 Northwest Freeway, Suite 558, Houston, USA 485" required> 
                                                 </div>
                                             </div>
+                                        </div><!--End  of Contacts -->
+
+                                        <div class="flex w-full">
+                                                <div class="ml-auto mr-20">
+                                                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">Save</button>        
+                                                <button type="button" class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Cancel</button>
+                                                </div>
+                                        </div> 
                                     </div>
                                 <div>     
                             </div>
@@ -780,8 +730,6 @@
             </div>
     </section>
 <!--end of modal Section -->
-
-
 
 
 <!-- Start Footer -->
