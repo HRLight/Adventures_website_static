@@ -116,27 +116,25 @@
             localStorage.setItem("navbar" , "navbar bg-["+bgColorValue.value+"]");    
         }//end of the nav Color
 
-
-
-
         // Start of Service module 
         function add_services(){
-                    alert("Are you sure you want to add service");
-                    var service = document.getElementById("add_service"),
-                    form = document.getElementsByTagName("form")[0],
-                    ContestantNum = 1,
-                    i;
-                    for(i=0; i<ContestantNum; i++){
+                alert("Are you sure you want to add service");
+                var service = document.getElementById("add_service"),
+                form = document.getElementsByTagName("form")[0],
+                ContestantNum = 1,
+                i;
+                for(i=0; i<ContestantNum; i++){
                     var clone = service.cloneNode(true);
                     form.appendChild(clone);
                     service.classList.remove("hidden");
 
                     let add_service_title=document.getElementById("add_service_title").value;
                      localStorage.setItem("Service" , add_service_title);
+
                      if(add_service_title==null || add_service_title==""){
                         add_service_title="None"
 
-                     }
+                }
                      var Service_title=localStorage.getItem("Service");
                      document.getElementById("display_service_title").innerText=Service_title;
 
@@ -146,32 +144,45 @@
                     document.getElementById("display_service_description").innerText=add_service_description; 
                 }
                                 
-        }//end of Service                              
+            }//end of Service                              
 
                 function display_stategy(){
 
                         let strategy=document.getElementById("add_strategy").value;
-                        document.getElementById("strategy").innerText=strategy; 
-                                    
-                }
+                        localStorage.setItem("Strategy", strategy);
+                        if(strategy== null || strategy==""){
+                            strategy="The generated injected humour, or non-characteristic words etc.";
 
-                    function display_development(){
-                        let strategy=document.getElementById("add_development").value;
-                        document.getElementById("development").innerText=strategy; 
-                        
-                    }                       
+                        }
+                        var Strategy_display=localStorage.getItem("Strategy");
+                        document.getElementById("strategy").innerText=Strategy_display;      
+                         }
 
                     function display_launch(){
 
-                        let strategy=document.getElementById("add_launch").value;
-                        document.getElementById("launch").innerText=strategy; 
+
+                        let launch=document.getElementById("add_launch").value;
+                        localStorage.setItem("Launch", launch);
+                        if(launch==null || launch==""){
+                            launch="The generated injected humour, or non-characteristic words etc."
+
+                        }
+                        var Launch=localStorage.getItem("Launch");
+                        document.getElementById("launch").innerText=Launch; 
+                        
+                    }                       
+
+                    function display_development(){
+
+                        let Development=document.getElementById("add_development").value;
+                        localStorage.setItem("Development", Development );
+                        if(Development == null || Development==""){
+                            Development = "The generated injected humour, or non-characteristic words etc.";
+                        }
+                        var development_display= localStorage.getItem("Development"); 
+                        document.getElementById("development").innerText=development_display; 
                         
                     }
-
-
-
-
-
 
                     // Pending Cannot add portfolio
                     function add_portfolio(){
@@ -185,13 +196,42 @@
                             portfolio2.appendChild(clone);
                             portfolio.classList.remove("hidden");
     
-                            // let add_service_title=document.getElementById("add_service_title").value;
-                            // document.getElementById("display_service_title").innerText=add_service_title; 
-                            
-                            // let add_service_description=document.getElementById("add_service_description").value;
-                            // document.getElementById("display_service_description").innerText=add_service_description; 
+                            let add_service_title=document.getElementById("add_service_title").value;
+                            document.getElementById("display_service_title").innerText=add_service_title; 
+                            let add_service_description=document.getElementById("add_service_description").value;
+                            document.getElementById("display_service_description").innerText=add_service_description; 
                         }
                     }
 
-            
-              
+                    function phone(){
+                        let p_number = document.getElementById("p_number").value;
+                        localStorage.setItem("p_Number", p_number );
+                       
+                        if(p_number==null || p_number==""){
+                            p_number="09070368***"
+                            }
+                            var p_number_display = localStorage.getItem("p_Number");
+                            document.getElementById("p_number_display").innerText=p_number_display;
+                    }    
+
+                    function email(){
+                        let input_email = document.getElementById("input_email").value;
+                        localStorage.setItem("Email", input_email );
+                            if(input_email == null || input_email==""){
+                                input_email= "sample@gmail.com"
+
+                            }
+                            var email_display = localStorage.getItem("Email");
+                            document.getElementById("display_email").innerText=email_display;
+                    }
+                        
+
+                    function location(){
+                        let input_location = document.getElementById("input_location").value;
+                        localStorage.setItem("Company_Address", input_location );
+                            if(input_location == null || input_location == ""){
+                                input_location = "C/54 Northwest Freeway, Suite 558, Houston, USA 485";
+                            }
+                            var location_display = localStorage.getItem("Company_Address");
+                            document.getElementById("display_location").innerText=location_display;
+                    }
