@@ -37,7 +37,18 @@
             service_show == true ?  service_edit.classList.remove("hidden") :   service_edit.classList.add("hidden");
          }
 
+         function contact_click(){
 
+            var contact_navbar = document.getElementById("contact_navbar");
+            var contact =document.getElementById("contact");
+            var contact_edit = document.getElementById("contact_edit");
+            var contact_show = document.getElementById("contact_show").checked;
+         
+            contact_show == true ?  contact_navbar.classList.remove("hidden") : contact_navbar.classList.add("hidden");
+            contact_show == true ?  contact.classList.remove("hidden") : contact.classList.add("hidden");
+            contact_show == true ?  contact_edit.classList.remove("hidden") :   contact_edit.classList.add("hidden");
+        
+         }
 
          function portfolio(){
             var porfolio_navbar = document.getElementById("porfolio_navbar");
@@ -49,8 +60,6 @@
             portfolio_show == true ?  portfolio.classList.remove("hidden") :    portfolio.classList.add("hidden");
             portfolio_show == true ?  portfolio_edit.classList.remove("hidden") :   portfolio_edit.classList.add("hidden");
          }
-
-        
         // Auto display In Text of menu items 
         function home_display()
         {                    
@@ -75,8 +84,6 @@
 
         }
 
-
-
         //About Company Start of editable display
         function about_display_txt()
         {
@@ -91,9 +98,6 @@
             var About= localStorage.getItem("About");
             document.getElementById("about-txt1").innerText=About;
 
-
-
-
             let title3=document.getElementById("add_description_about").value;
             localStorage.setItem("Company_Story", title3);
             if(title3==null || title3==""){
@@ -103,7 +107,6 @@
             document.getElementById("about-txt3").innerText=company_story; 
         }//end of about display
         
-
         // start of the Background nav Color 
         function updateTopInfoBGColorClick(){
             var bgColorValue = document.getElementById("top_info_bg_color_selected");
@@ -159,8 +162,7 @@
                          }
 
                     function display_launch(){
-
-
+                        
                         let launch=document.getElementById("add_launch").value;
                         localStorage.setItem("Launch", launch);
                         if(launch==null || launch==""){
@@ -183,7 +185,6 @@
                         document.getElementById("development").innerText=development_display; 
                         
                     }
-
                     // Pending Cannot add portfolio
                     function add_portfolio(){
                         alert("Are you sure you want to add this service");
@@ -224,9 +225,7 @@
                             var email_display = localStorage.getItem("Email");
                             document.getElementById("display_email").innerText=email_display;
                     }
-                        
-
-                    function location(){
+                    function location_input(){
                         let input_location = document.getElementById("input_location").value;
                         localStorage.setItem("Company_Address", input_location );
                             if(input_location == null || input_location == ""){
@@ -235,3 +234,12 @@
                             var location_display = localStorage.getItem("Company_Address");
                             document.getElementById("display_location").innerText=location_display;
                     }
+
+ // for fortfolio button
+ $(document).ready(function(){
+    $("#add_projects").click(function(){
+        $("#add_portfolio").clone().appendTo("#portfolio2");
+    });
+});
+
+                
