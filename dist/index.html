@@ -328,9 +328,9 @@
                     <p class="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.</p>
                 </div><!--end grid-->
                 
-                <div class="grid grid-cols-1 mt-8 relative">
-                    <div class="tiny-two-item">
-                        <div class="tiny-slide">
+                <div class="grid grid-cols-1 mt-8 relative" >
+                    <div class="tiny-two-item" id="parent_review">
+                        <div class="tiny-slide" id="review_child">
                             <div class="lg:flex p-6 lg:p-0 relative rounded-md shadow shadow-slate-200 dark:shadow-slate-700 bg-white dark:bg-black overflow-hidden m-2">
                                 <img class="w-24 h-24 lg:w-48 lg:h-auto lg:rounded-none rounded-full mx-auto" src="assets/images/client/01.jpg" alt="" width="384" height="512">
                                 <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
@@ -343,45 +343,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tiny-slide">
-                            <div class="lg:flex p-6 lg:p-0 relative rounded-md shadow shadow-slate-200 dark:shadow-slate-700 bg-white dark:bg-black overflow-hidden m-2">
-                                <img class="w-24 h-24 lg:w-48 lg:h-auto lg:rounded-none rounded-full mx-auto" src="assets/images/client/02.jpg" alt="" width="384" height="512">
-                                <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
-                                    <p class="text-base text-slate-500 dark:text-slate-200"> " The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. " </p>
-                                    
-                                    <div>
-                                        <span class="text-orange-600 block mb-1">Carl Oliver</span>
-                                        <span class="text-slate-400 text-sm dark:text-white/60 block">Staff Engineer, Algolia</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tiny-slide">
-                            <div class="lg:flex p-6 lg:p-0 relative rounded-md shadow shadow-slate-200 dark:shadow-slate-700 bg-white dark:bg-black overflow-hidden m-2">
-                                <img class="w-24 h-24 lg:w-48 lg:h-auto lg:rounded-none rounded-full mx-auto" src="assets/images/client/03.jpg" alt="" width="384" height="512">
-                                <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
-                                    <p class="text-base text-slate-500 dark:text-slate-200"> " One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others. " </p>
-                                    
-                                    <div>
-                                        <span class="text-orange-600 block mb-1">Barbara McIntosh</span>
-                                        <span class="text-slate-400 text-sm dark:text-white/60 block">Staff Engineer, Algolia</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tiny-slide">
-                            <div class="lg:flex p-6 lg:p-0 relative rounded-md shadow shadow-slate-200 dark:shadow-slate-700 bg-white dark:bg-black overflow-hidden m-2">
-                                <img class="w-24 h-24 lg:w-48 lg:h-auto lg:rounded-none rounded-full mx-auto" src="assets/images/client/04.jpg" alt="" width="384" height="512">
-                                <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
-                                    <p class="text-base text-slate-500 dark:text-slate-200"> " Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts. " </p>
-                                    
-                                    <div>
-                                        <span class="text-orange-600 block mb-1">Jill Webb</span>
-                                        <span class="text-slate-400 text-sm dark:text-white/60 block">Staff Engineer, Algolia</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div><!--end grid-->
             </div><!--end container-->
@@ -389,12 +351,11 @@
         <!-- End -->
 
         <!-- Start -->
-        <section class="relative md:py-24 py-16 bg-zinc-50 dark:bg-gray-800" id="contact">
-            <div class="container">
+<section class="relative md:py-24 py-16 bg-zinc-50 dark:bg-gray-800" id="contact">
+    <div class="container">
                 <div class="grid grid-cols-1 pb-8 text-center">
                     <h6 class="text-orange-600 text-base font-medium uppercase mb-2">Contact us</h6>
                     <h3 class="mb-4 md:text-2xl text-xl font-medium dark:text-white">Get In Touch !</h3>
-
                     <p class="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.</p>
                 </div><!--end grid-->
 
@@ -465,8 +426,8 @@
                         </div>
                     </div>
                 </div><!--end grid-->
-            </div><!--end container-->
-        </section><!--end section-->
+    </div><!--end container-->
+</section><!--end section-->
         <!-- End -->
 
 <!--Start of Editable website-->
@@ -690,7 +651,7 @@
                                         </div>
 
                                             <div class="md:w-full px-10">   
-                                                <button class="bg-indigo-700 w-40 md:w-96 h-10 rounded-full font-medium text-white" > <i class="uil uil-plus "></i> Add Review</button>
+                                                <button class="bg-indigo-700 w-40 md:w-96 h-10 rounded-full font-medium text-white" id="add_review" > <i class="uil uil-plus "></i> Add Review</button>
                                             </div>
                                     </div><!--End  of Review -->
                                     <div class="w-full"  id="contact_edit"><!--Start of Contact -->
@@ -787,21 +748,6 @@
         <script src="assets/js/menu.js" defer></script>
         <script src="assets/js/modal.js"></script>
         <script src="assets/js/app.js"></script>
-
-        <script>
-           
-
-            // for fortfolio button
-            $(document).ready(function(){
-                $("#sample_button").click(function(){
-                    $("#add_portfolio").clone().appendTo("#portfolio2");
-                });
-            });
-            
-
-
-
-        </script>
         <!-- JAVASCRIPTS -->
     </body>
 </html>

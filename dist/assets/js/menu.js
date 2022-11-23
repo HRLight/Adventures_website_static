@@ -235,11 +235,25 @@
                             document.getElementById("display_location").innerText=location_display;
                     }
 
- // for fortfolio button
- $(document).ready(function(){
-    $("#add_projects").click(function(){
-        $("#add_portfolio").clone().appendTo("#portfolio2");
-    });
-});
+
+
+                    
+                // for fortfolio button
+                $(document).ready(function(){
+                    $("#add_projects").click(function(){
+                        $("#add_portfolio").clone().appendTo("#portfolio2");
+
+
+                    });
+                });
 
                 
+
+
+                     //For Review
+                     $(document).ready(function(){
+                        $("#add_review").click(function(){
+                            $("#review_child").clone().appendTo("#parent_review");
+                        });
+                    });
+    
