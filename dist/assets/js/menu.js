@@ -278,7 +278,7 @@
 
                         let reader = new FileReader();
                         reader.onload = (e) => {
-                            $('#home').attr('src', e.target.result);
+                            $('#home_img').attr('src', e.target.result);
                         }
                         reader.readAsDataURL(this.files[0]);
 

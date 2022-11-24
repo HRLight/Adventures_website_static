@@ -1441,26 +1441,26 @@ h1,  h2,  h3,  h4,  h5,  h6,  .h1,  .h2,  .h3,  .h4,  .h5,  .h6{
   display: block;
   padding: 0.75rem;
   --tw-text-opacity: 1;
-  color: rgb(22 28 45 / var(--tw-text-opacity));
+  
 }
 .navbar .navigation .navbar-nav .nav-link:hover{
   --tw-text-opacity: 1;
-  color: rgb(234 88 12 / var(--tw-text-opacity));
+  
 }
 .dark .navbar .navigation .navbar-nav .nav-link{
   color: rgb(255 255 255 / 0.6);
 }
 .dark .navbar .navigation .navbar-nav .nav-link:hover{
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+ 
 }
 .navbar .navigation .navbar-nav .active .nav-link{
   --tw-text-opacity: 1;
-  color: rgb(234 88 12 / var(--tw-text-opacity));
+  
 }
 .dark .navbar .navigation .navbar-nav .active .nav-link{
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  
 }
 .navbar .navbar-brand{
   margin-right: 3rem;
@@ -1594,13 +1594,13 @@ h1,  h2,  h3,  h4,  h5,  h6,  .h1,  .h2,  .h3,  .h4,  .h5,  .h6{
   }
   .dark .navbar.is-sticky .navbar-nav.nav-light .active .nav-link{
     --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+    color: rgb(22 28 45 / var(--tw-text-opacity));
   }
 }
 @media (max-width: 991px) {
   .navbar{
     --tw-bg-opacity: 1 !important;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+    
     --tw-shadow: 0 0 3px rgb(60 72 88 / 0.15) !important;
     --tw-shadow-colored: 0 0 3px var(--tw-shadow-color) !important;
     -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;

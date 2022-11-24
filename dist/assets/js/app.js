@@ -37,14 +37,14 @@ function windowScroll() {
         document.body.scrollTop >= 50 ||
         document.documentElement.scrollTop >= 50
     ) {
-        navbar.classList.add("is-sticky");
+        //navbar.classList.add("is-sticky");
     } else {
         navbar.classList.remove("is-sticky");
     }
 }
 
 window.addEventListener('scroll', (ev) => {
-    ev.preventDefault();
+  
     windowScroll();
 })
 
