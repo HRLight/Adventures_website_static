@@ -257,9 +257,21 @@
                      //For Review
                      $(document).ready(function(){
                         $("#add_review").click(function(){
+                          
+                            $('#add_review_img').change(function(){
+
+                                let reader = new FileReader();
+                                reader.onload = (e) => {
+                                    $('#review_display').attr('src', e.target.result);
+                                }
+                                reader.readAsDataURL(this.files[0]);
+                    
+                            });
+                       
+                            
                             $("#review_child").clone().appendTo("#parent_review");
                         });
-                    });
+                    });//end of review
     
 
                     $('#top-banner-image-selected').change(function(){
@@ -267,9 +279,11 @@
                         let reader = new FileReader();
                         reader.onload = (e) => {
                             $('#home').attr('src', e.target.result);
-                            
                         }
                         reader.readAsDataURL(this.files[0]);
 
             
                     });
+
+
+                   
