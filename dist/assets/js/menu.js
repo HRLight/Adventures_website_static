@@ -243,12 +243,16 @@
                     $("#add_projects").click(function(){
                         $("#add_portfolio").clone().appendTo("#portfolio2");
 
+                        let project_title=document.getElementById("project_title").value;
+                        localStorage.setItem("Project_Title", project_title );
+                        if(project_title==null || project_title==""){
+                            project_title="project"
+                        }
+                        var project_title_display= localStorage.getItem("Project_Title");
+                        document.getElementById("project_title_display").innerText=project_title_display;
 
                     });
                 });
-
-                
-
 
                      //For Review
                      $(document).ready(function(){
@@ -257,3 +261,15 @@
                         });
                     });
     
+
+                    $('#top-banner-image-selected').change(function(){
+
+                        let reader = new FileReader();
+                        reader.onload = (e) => {
+                            $('#home').attr('src', e.target.result);
+                            
+                        }
+                        reader.readAsDataURL(this.files[0]);
+
+            
+                    });
