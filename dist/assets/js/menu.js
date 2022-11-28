@@ -113,11 +113,58 @@
             var TOP_INFO_DIV = document.getElementById("navbar");
             console.log(bgColorValue.value);
             TOP_INFO_DIV.className="navbar bg-["+bgColorValue.value+"]";
-            //TOP_INFO_DIV.style.backgroundColor=bgColorValue.value;
             console.log(TOP_INFO_DIV.className);
 
             localStorage.setItem("navbar" , "navbar bg-["+bgColorValue.value+"]");    
         }//end of the nav Color
+
+        function updateColorHomeTitle(){
+            var bgColorValue = document.getElementById("home_title_selected_color");
+            var TOP_INFO_DIV = document.getElementById("output1");
+            console.log(bgColorValue.value);
+            TOP_INFO_DIV.className="title-home-color lg:text-5xl text-4xl lg:leading-normal leading-normal font-medium mb-7 position-relative text-["+bgColorValue.value+"]";
+            console.log(TOP_INFO_DIV.className);
+            localStorage.setItem("title-home-color" , "title-home-color text-["+bgColorValue.value+"]");    
+        }
+
+
+
+        function updateColorHomeDescription(){
+            var bgColorValue = document.getElementById("home_description_color");
+            var TOP_INFO_DIV = document.getElementById("home_des");
+            console.log(bgColorValue.value);
+            TOP_INFO_DIV.className="opacity-50 mb-0 max-w-2xl text-lg text-["+bgColorValue.value+"]";
+            console.log(TOP_INFO_DIV.className);
+            localStorage.setItem("home_des" , "description-home-color text-["+bgColorValue.value+"]");    
+        }
+
+
+
+        function updateNavTextColor(){
+            var bgColorValue = document.getElementById("top_info_text_color_selected");
+            var TOP_INFO_DIV = document.getElementById("navbar-navlist");
+            console.log(bgColorValue.value);
+            TOP_INFO_DIV.className="navbar-nav text-["+bgColorValue.value+"]";
+            console.log(TOP_INFO_DIV.className);
+            localStorage.setItem("navbar-nav" , "navbar-nav text-["+bgColorValue.value+"]");    
+        }
+
+        
+
+        function updateAboutBackgroundColor(){
+            var bgColorValue = document.getElementById("about_background_color");
+            var TOP_INFO_DIV = document.getElementById("about");
+            console.log(bgColorValue.value);
+            TOP_INFO_DIV.className="relative md:py-24 py-16 bg-["+bgColorValue.value+"]";
+            console.log(TOP_INFO_DIV.className);
+            localStorage.setItem("About" , "About-Background bg-["+bgColorValue.value+"]");    
+        }
+
+
+
+
+
+
 
         // Start of Service module 
         function add_services(){

@@ -92,7 +92,7 @@
                
                 <!-- Navbar Manu -->
                 <div class="navigation lg_992:order-1 lg_992:flex hidden" id="menu-collapse">
-                    <ul class="navbar-nav nav-dark" id="navbar-navlist">                
+                    <ul class="navbar-nav text-[#c02c2c]" id="navbar-navlist">                
                         <li class="nav-item" id="home_navbar">
                             <a class="nav-link active" href="#home">Home</a>
                         </li>
@@ -116,7 +116,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contact" id="contact_navbar">Contact us</a>
                         </li>           
-                        
                         <li class="nav-item">
                             <a class="nav-link" href="#edit">Edit</a>
                         </li>
@@ -124,8 +123,6 @@
                 </div>
                
             </div>
-
-            
         </nav>
         <!-- Navbar End -->
         <!-- Start of Edit  Modal -->
@@ -136,12 +133,14 @@
 
        <!-- Hero Start -->
             <section class="home-section pb-36 pt-14 lg:pb-64 w-full table relative" id="home" >
-                <img src=""
-                alt="" id="home_img" class="absolute w-full h-full object-cover">
+
+                <img src="" alt="" id="home_img" class="absolute w-full h-full object-cover">
+               
                 <div class="absolute inset-0  opacity-80"></div>
                 <div class="container relative">
+                    
                     <div class="grid grid-cols-1 mt-12">
-                        <h4 class="text-white lg:text-5xl text-4xl lg:leading-normal leading-normal font-medium mb-7 position-relative " id="output1">Providing Brilliant Ideas <br>For Your <span id="outtile2" class="typewrite relative text-type-element" data-period="2000" data-type='[ "Business", "Startups", "Digital Agency", "Marketing" ]'></span></h4>
+                        <h4 class="title-home-color text-white lg:text-5xl text-4xl lg:leading-normal leading-normal font-medium mb-7 position-relative " id="output1">Providing Brilliant Ideas <br>For Your <span id="outtile2" class="typewrite relative text-type-element"></span></h4>
                     
                         <p class="text-white opacity-50 mb-0 max-w-2xl text-lg" id="home_des">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.</p>
                     
@@ -149,7 +148,14 @@
                             <a href="" class="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md">Get Started</a>
                         </div>
                     </div>
-                </div><!--end container-->
+
+                    <div class="w-full">
+                        <div class="w-20 ml-auto">
+                        <button class="py-2.5 px-5  mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700" id="home_page_btn">Edit</button>
+                        </div>
+                    </div>
+                   
+                </div><!--end container-->         
             </section>
         <!--end section-->
 
@@ -181,7 +187,80 @@
                         </div>
                     </div><!--end col-->
                 </div><!--end grid-->
+
+                
+                <div class="w-full">
+                    <div class="w-20 ml-auto">
+                    <button class="py-2.5 px-5  mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700" id="about_page_btn">Edit</button>
+                    </div>
+                </div>
             </div><!--end container-->
+
+
+            <!--about modal  -->
+            <div class="hidden bg-opacity-50 bg-gray-800 h-screen w-full absolute inset-0 justify-center items-center" id="edit_about_modal">
+                <div class=" mt-10 md:py-24 py-16 bg-opacity-50 dark:bg-gray-800 rounded" >
+                    <div class="w-3/4 md:w-1/2  mx-auto mt-10 bg-gray-50 rounded drop-shadow-xl">
+                        <div class="text-center ">
+                             <h6 class="text-orange-600  font-medium text-2xl uppercase mb-2">Custom Website</h6>
+                                <h3 class="mb-4 md:text-2xl text-xl font-medium dark:text-white">Edit Here!</h3>
+                                    <p class="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.</p>
+                                        </div>
+                                            <div class="bg-gray-50 text-center">
+                                                <div class="mt-10  w-full" id="about_edit_menu">
+                                                    <div class="text-center">
+                                                    <h6 class="text-orange-600 text-base font-medium  mb-2 p-4">About</h6>
+                                                        <h4>Customize your about settings</h4>
+                                                    </div>
+                                                        <div class="md:flex w-full  py-5">
+                                                            <div class="md:w-full mx-10 p-4">
+                                                                <label for="">Company Name:</label>
+                                                                <input type="text" id="add_service_title" onkeyup="about_display_txt()" class="mt-1 px-3 py-2  bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 w-full h-10 " placeholder="About Title:" >
+                                                            </div>
+                                                            <div class="md:w-full px-10">
+                                                                <label for="" class="float-left">Upload Video</label>
+                                                                <input name="name" id="name" type="file" title="Upload Logo" class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100" Title="Upload bacground"> 
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="md:flex">
+                                                            <div class="mx-20">
+                                                                <label for="top_bg_color_selected">Change Background Color</label>
+                                                                <input type="color" id="about_background_color" name="about_background_color" value="#ff0550" onChange="updateAboutBackgroundColor()" onclick="updateAboutBackgroundColor()">
+                                                            </div>
+
+                                                            <div class="mx-20">
+                                                                <label for="top_bg_color_selected">Change Description Color</label>
+                                                                <input type="color" id="home_description_color" name="home_description_color" value="#ff0550" onChange="updateColorHomeDescription()" onclick="updateColorHomeDescription()">
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="w-full py-5 ">
+                                                            <div class="mx-10 p-4">
+                                                                <label for=""> Company Story </label>
+                                                                <textarea name="Description" id="add_description_about" onkeyup="about_display_txt()" type="text" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 textarea h-20 w-full "  placeholder="Description"></textarea>
+                                                            </div>
+
+                                                            <div class="mt-3 mr-10  flex justify-end space-x-3">
+                                                                <button class="px-3 py-1 rounded hover:bg-red-300 hover:bg-opacity-50 hover:text-red-900">Save</button>
+                                                                <button id="about_close-modal" class="px-3 py-1 bg-red-800 text-gray-200 hover:bg-red-600 rounded" >Cancel</button>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                       
+
+                                                    </div>
+            
+                                        </div>       
+                            </div>     
+                        </div>     
+                    </div>
+                </div>
+
+<!--end about modal -->
+
+
         </section><!--end section-->
         <!-- End -->
 
@@ -360,6 +439,7 @@
         </section><!--end section-->
         <!-- End -->
 
+
         <!-- Start -->
 <section class="relative md:py-24 py-16 bg-zinc-50 dark:bg-gray-800" id="contact">
     <div class="container">
@@ -440,6 +520,144 @@
 </section><!--end section-->
         <!-- End -->
 
+<!--Modal of navigation bar-->
+        <div class="hidden bg-opacity-50 bg-gray-800 lg:h-screen lg:w-full absolute inset-0 md:justify-center md:items-center" id="edit">
+            <div class=" mt-10 md:py-24 py-16  dark:bg-gray-800 rounded" >
+                <div class="w-3/4 md:w-3/4 lg:w-3/4 xl:w-1/2  mx-auto mt-10 bg-gray-50 rounded drop-shadow-xl">
+                    <div class="text-center ">
+                         <h6 class="text-orange-600  font-medium text-2xl uppercase mb-2">Custom Website</h6>
+                            <h3 class="mb-4 md:text-2xl text-xl font-medium dark:text-white">Edit Here!</h3>
+                                <p class="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.</p>
+                                    </div>
+                                        <div class="bg-gray-50 text-center">
+                                            <div class="w-full mt-10 "> <!-- Navigation Bar-->
+                                                <h4 class="text-1xl font-bold">Select A Menu Items</h4></div>
+                                                <div class="md:flex">
+                                                    <div class="w-64 mx-auto">
+                                                        <input type="checkbox" onclick="home1();" class="" id="home_show">
+                                                        <label for="" class="font-bold">Home</label>
+                                                    </div>
+                                                    <div class="w-64 mx-auto">
+                                                        <input type="checkbox" onclick="about1()" class="" id="about_show">
+                                                        <label for="" class="font-bold">About</label>
+                                                    </div>
+                                                    <div class="w-64 mx-auto">
+                                                        <input type="checkbox"   onclick="service()" class="" id="service_show">
+                                                        <label for="" class="font-bold">Service</label>
+                                                    </div>
+                                                    <div class="w-64 mx-auto">
+                                                        <input type="checkbox" onclick="portfolio()"class="" id="portfolio_show">
+                                                        <label for="" class="font-bold">Portfolio</label>
+                                                    </div>
+                                                    <div class="w-64 mx-auto">
+                                                        <input type="checkbox" onclick="review()" class="">
+                                                        <label for="" class="font-bold">Review</label>
+                                                    </div>
+            
+                                                    <div class="w-64 mx-auto">
+                                                        <input type="checkbox" onclick="contact_click()" id="contact_show">
+                                                        <label for="" class="font-bold">Contact Us</label>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                    <div class="w-full text-center mt-6 ">
+                                                        <h4 class="text-1xl font-bold" >Set Navigation Color</h4>
+                                                            <div class="md:flex w-full mt-6">
+                                                                <div class="mx-20">
+                                                                    <label for="top_bg_color_selected">Change Navigation Backgroud</label>
+                                                                    <input type="color" id="top_info_bg_color_selected" name="top_info_bg_color_selected" value="#ff0550" onChange="updateTopInfoBGColorClick()" onclick="updateTopInfoBGColorClick()">
+                                                                </div>
+                                                                <div>
+                                                                    <label for="top_bg_color_selected">Change Text Color</label>
+                                                                    <input type="color" id="top_info_text_color_selected" name="top_info_text_color_selected" value="#ff0550" onChange="updateNavTextColor()" onclick="updateNavTextColor()">
+                                                                </div>  
+                                                            </div>
+
+                                                            <div class="mt-3 mr-10  flex justify-end space-x-3">
+                                                                <button class="px-3 py-1 rounded hover:bg-red-300 hover:bg-opacity-50 hover:text-red-900">Save</button>
+                                                                <button id="close-modal" class="px-3 py-1 bg-red-800 text-gray-200 hover:bg-red-600 rounded" >Cancel</button>
+                                                            </div>
+                                                           
+                                                    </div>
+                                                </div>
+                                           
+                                            </div>
+                                        </div>              
+                        </div>     
+                    </div>
+                </div>
+        </div> 
+
+<!--End  of navigation bar-->
+<div class="hidden bg-opacity-50 bg-gray-800 h-full w-full absolute inset-0  justify-center items-center" id="edit_home_modal">
+    <div class=" mt-10 md:py-24 py-16 bg-opacity-50 dark:bg-gray-800 rounded" >
+        <div class="w-3/4 md:w-1/2  mx-auto mt-10 bg-gray-50 rounded drop-shadow-xl">
+            <div class="text-center ">
+                 <h6 class="text-orange-600  font-medium text-2xl uppercase mb-2">Custom Website</h6>
+                    <h3 class="mb-4 md:text-2xl text-xl font-medium dark:text-white">Edit Here!</h3>
+                        <p class="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.</p>
+                            </div>
+                                <div class="bg-gray-50 text-center">
+
+
+                                    <div class="w-full  mt-10 mb-10" id="home_menu"><!--Home Page-->
+                                        <div class="w-full text-center py-5">
+                                            <h5 class="text-orange-600 text-base font-medium  mb-2">Change Home Page</h5>
+                                            <h4>Customize your Home settings</h4>
+                                        </div>
+
+                                        
+                                    <div class="md:flex py-5">
+                                        <div class="md:w-full mx-10"> 
+                                            <label for="" class="mb-4 md:text-1xl text-md font-medium dark:text-white">Home Title</label>
+                                            <input  name="name" id="title1" onkeyup="home_display()" type="text" title="Upload Logo" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 w-full h-10 "  placeholder="Title :">
+                                        </div>
+                                        <div class="md:w-full mx-10">
+                                            <label for="" class="mb-4 md:text-1xl text-md font-medium dark:text-white">Home Description</label>
+                                            <textarea name="Description" id="add_home_description" onkeyup="home_display()" type="text" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 textarea h-10 w-full "  placeholder="Description"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="md:flex ">
+                                                
+                                        <div class="md:w-full mx-10 py-6">
+                                            <label for="" class="mb-4 md:text-1xl text-md font-medium dark:text-white">Upload Background Image</label>
+                                            <input name="name" id="top-banner-image-selected"  type="file" title="Upload Logo" class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100" Title="Upload bacground">
+                                        </div>
+                                    </div>
+                                <div class="md:flex">
+                                    <div class="mx-20">
+                                        <label for="top_bg_color_selected">Change Title Color </label>
+                                        <input type="color" id="home_title_selected_color" name="home_title_selected_color" value="#ff0550" onChange="updateColorHomeTitle()" onclick="updateColorHomeTitle()">
+                                    </div>
+
+                                    <div class="mx-20">
+                                        <label for="top_bg_color_selected">Change Description Color</label>
+                                        <input type="color" id="home_description_color" name="home_description_color" value="#ff0550" onChange="updateColorHomeDescription()" onclick="updateColorHomeDescription()">
+                                    </div>
+                                </div>
+
+                                    <div class="mt-3 mr-10  flex justify-end space-x-3">
+                                        <button class="px-3 py-1 rounded hover:bg-red-300 hover:bg-opacity-50 hover:text-red-900">Save</button>
+                                        <button id="close-modal2" class="px-3 py-1 bg-red-800 text-gray-200 hover:bg-red-600 rounded" >Cancel</button>
+                                    </div>
+                                    
+                                </div> 
+                </div>     
+            </div>     
+        </div>
+    </div>
+<!--Edit Home page modal-->
+
+
+
+
+
+
+<!--End Edit Home page modal-->
+
+
+
 <!--Start of Editable website-->
 <section class="mt-10 md:py-24 py-16  dark:bg-gray-800" id="edit">
     <div class="relative  bg-white mt-10">
@@ -489,7 +707,7 @@
                                                     </div>
                                                     <div>
                                                         <label for="top_bg_color_selected">Change Text Color</label>
-                                                        <input type="color" id="top_info_bg_color_selected" name="top_info_bg_color_selected" value="#ff0550" onChange="updateTopInfoBGColorClick()" onclick="updateTopInfoBGColorClick()">
+                                                        <input type="color" id="top_info_text_color_selected" name="top_info_text_color_selected" value="#ff0550" onChange="updateNavTextColor()" onclick="updateNavTextColor()">
                                                     </div>
                                                 </div>
                                         </div>
@@ -705,6 +923,13 @@
 <!--end of modal Section -->
 
 
+
+
+
+
+
+
+
 <!-- Start Footer -->
         <footer class="py-8  bg-slate-800 dark:bg-gray-900"  id="footer_section">
             <div class="container">
@@ -757,6 +982,51 @@
         <script src="assets/js/menu.js" defer></script>
         <script src="assets/js/modal.js"></script>
         <script src="assets/js/app.js"></script>
+
+
+        <script>
+            window.addEventListener('DOMContentLoaded', () =>{
+                const overlay = document.querySelector('#edit')
+                const delBtn = document.querySelector('#menu_sidebar')
+                const closeBtn = document.querySelector('#close-modal')
+    
+                const toggleModal = () => {
+                    overlay.classList.toggle('hidden')
+                    overlay.classList.toggle('main')
+                }
+    
+                delBtn.addEventListener('click', toggleModal)
+                closeBtn.addEventListener('click', toggleModal)
+            })
+
+            
+            window.addEventListener('DOMContentLoaded', () =>{
+            const edit_home_modal = document.querySelector('#edit_home_modal')
+            const home_page_btn = document.querySelector('#home_page_btn')
+            const closeBtn_home = document.querySelector('#close-modal2')
+
+            const toggleModal = () => {
+                edit_home_modal.classList.toggle('hidden')
+                edit_home_modal.classList.toggle('main')
+            }
+
+            home_page_btn.addEventListener('click', toggleModal)
+
+            closeBtn_home.addEventListener('click', toggleModal)
+        })
+
+        window.addEventListener('DOMContentLoaded', () =>{
+            const edit_about_modal = document.querySelector('#edit_about_modal')
+            const home_page_btn = document.querySelector('#about_page_btn')
+            const closeBtn_about = document.querySelector('#about_close-modal')
+            const toggleModal = () => {
+                edit_about_modal.classList.toggle('hidden')
+                edit_about_modal.classList.toggle('main')
+            }
+            home_page_btn.addEventListener('click', toggleModal)
+            closeBtn_about.addEventListener('click', toggleModal)
+        })    
+        </script>
         <!-- JAVASCRIPTS -->
     </body>
 </html>
